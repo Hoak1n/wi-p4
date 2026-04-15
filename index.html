@@ -123,14 +123,14 @@
       <h3>Залишити відгук</h3>
       <form id="feedback-form" class="feedback-form">
         <div class="form-group">
-          <input type="text" id="user-name" placeholder="Ваше ім’я" required />
+          <input type="text" id="user-name" placeholder="Ваше ім’я" />
         </div>
         <div class="form-group">
-          <input type="email" id="user-email" placeholder="Email (напр. test@mail.com)" required />
+          <input type="email" id="user-email" placeholder="Email (напр. test@mail.com)" />
           <span id="email-error" class="error-msg">Невірний формат email</span>
         </div>
         <div class="form-group">
-          <textarea id="user-message" placeholder="Ваше повідомлення" rows="4" required></textarea>
+          <textarea id="user-message" placeholder="Ваше повідомлення" rows="5"></textarea>
         </div>
         <button type="submit" id="submit-btn">Відправити</button>
       </form>
@@ -145,13 +145,6 @@
         <a href="#">Гарантія</a>
       </div>
     </footer>
-    <script>
-      const menuIcon = document.querySelector(".menu-icon");
-      const navMenu = document.querySelector("nav");
-
-      menuIcon.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
